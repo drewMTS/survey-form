@@ -1,0 +1,44 @@
+
+<!DOCTYPE html!>
+<html>
+  <head>
+    <title>Andrew`s Survey</title>
+    <link rel="stylesheet" href="styles.css">
+    </head>
+  <body>
+<h1 id="title"> Andrew`s Survey</h1>
+<p id="description">Help us Help you!</p>
+<form id="survey-form">
+<label id="name-label">Name:</label>
+<input id="name" type="text" placeholder="Type your name" class="inline" required>
+<label id="email-label"> E-mail:</label>
+<input id="email" type="email" placeholder="Write your email" class="inline" required>
+<label id="number-label">Age:</label>
+<input id="number" type="number" placeholder="Tell us your age" min="8" max="20" class="inline" required>
+<hr class="hr">
+<label id="dropdown-label">On a scale from 1-4, how much do you love your job?</label>
+<select id="dropdown" for="dropdown-label" class="dropdown">
+<option value="">choose here</option>
+<option value="1">1</option>
+<option value="2">2</option>
+<option value="3">3</option>
+<option value="4">4</option>
+  </select>
+<fieldset>
+<legend>Would you change your job?</legend>
+<label for="yes"> <input type="radio" id="yes" value="radio-yes" name="job-option" id="yes" checked>Yes</label>
+<label for="no"> <input type="radio" id="no" value="radio-no" name="job-option"> No</label>
+<label for="maybe"> <input type="radio" id="maybe" value="radio-maybe" name="job-option">Maybe</label>
+  </fieldset>
+  <fieldset>
+    <legend>How many jobs do you have?</legend>
+    <label for="none"> <input checked type="checkbox" id="none" value="checkbox1">None</label>
+    <label for="One"> <input type="checkbox" id="for" value="checkbox2">One</label>
+    <label for="Two"> <input type="checkbox" id="two" value="checkbox3">Two</label>
+    <label for="more"> <input type="checkbox" id="more" value="checkbox4">More</label></fieldset>
+    <label for="description">What is your dream job?<textarea id="description" class="inline" placeholder="Answer here..."></textarea></label>
+    <input id="submit" type="submit" class="submit" value="Submit">
+</form>
+</body>
+</html>
+
